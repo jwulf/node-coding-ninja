@@ -1,0 +1,23 @@
+{
+  "name": "node-coding-ninja",
+  "version": "0.0.1",
+  "description": "Magical Performance - Anything is Possible",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwulf/node-coding-ninja.git"
+  },
+  "author": "Joshua Wulf",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jwulf/node-coding-ninja/issues"
+  },
+  "dependencies": {
+    "commander": "~2.8.1",
+    "express": "~4.12.3",
+    "request": "~2.55.0"
+  }
+}
