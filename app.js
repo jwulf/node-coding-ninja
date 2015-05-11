@@ -19,12 +19,17 @@ if (program.ninjaFile) {
     request(srcUrl + req.url).pipe(res);
   });
 
-  var server = app.listen(3000, function () {
+  // https://github.com/joyent/node/issues/9195
+// https://github.com/strongloop/express/pull/2342#issuecomment-54517525
+  var server = app.listen(3000, '127.0.0.1', function () {
 
     var host = server.address().address;
     var port = server.address().port;
 
-    console.log('Ninja Dojo at http://%s:%s', host, port);
+
+    console.log('Ninja Dojo initialized.');
+
+    console.log('Open http://%s:%s in your browser', host, port);
 
   });
 }
