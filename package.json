@@ -1,6 +1,6 @@
 {
   "name": "node-coding-ninja",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Magical Performance - Anything is Possible",
   "main": "app.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "request": "~2.55.0"
   },
   "bin": {
-  "node-coding-ninja": "app.js"
+    "node-coding-ninja": "app.js"
   }
 }
