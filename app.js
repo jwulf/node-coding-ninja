@@ -3,7 +3,7 @@
 var program = require('commander');
 
 program
- .version('0.0.1')
+ .version('0.0.3')
  .option('-n, --ninja-file [uid]', 'Ninja file UID')
  .parse(process.argv);
 
@@ -16,8 +16,6 @@ if (program.ninjaFile) {
                 + program.ninjaFile;
 
   app.get('*',function(req,res){
-    console.log(req.url);
-    console.log(srcUrl + req.url);
     request(srcUrl + req.url).pipe(res);
   });
 
