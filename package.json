@@ -19,5 +19,8 @@
     "commander": "~2.8.1",
     "express": "~4.12.3",
     "request": "~2.55.0"
+  },
+  "bin": {
+  "node-coding-ninja": "app.js"
   }
 }
